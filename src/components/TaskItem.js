@@ -2,8 +2,6 @@ import React from 'react';
 
 const TaskItem = ({ task, onDelete, onToggleComplete, onEdit, isTaskOverdue }) => {
     const overdue = isTaskOverdue(task.deadline);
-
-    // Форматирование даты и времени для отображения
     const formatDeadline = (deadlineString) => {
         if (!deadlineString) return 'Без дедлайна';
 
